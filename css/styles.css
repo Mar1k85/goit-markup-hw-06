@@ -221,6 +221,9 @@ ul {
   background-color: var(--accent-text-color);
   border: 0;
 }
+.checkbox:focus ~ .checkbox-icon {
+  border: 2px solid var(--accent-text-color);
+}
 .modal-link {
   color: var(--accent-text-color);
   margin-left: 2px;
