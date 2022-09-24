@@ -78,6 +78,7 @@ ul {
   transform: translate(-50%, -50%) scale(70%);
 }
 .modal {
+  padding: 40px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -96,14 +97,15 @@ ul {
   pointer-events: none;
 }
 .modal-btn {
+  position: absolute;
+  top: 7px;
+  right: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30px;
   height: 30px;
-  margin-right: 8px;
-  margin-top: 8px;
-  margin-left: auto;
+
   background-color: var(--hero-primary-color);
   border-radius: 50%;
   border: 1px solid var(--modal-bth-border-);
@@ -116,12 +118,7 @@ ul {
 .modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form {
-  padding: 0 40px;
-}
 .form-title {
-  padding: 0 40px;
-  margin-top: 2px;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -132,20 +129,21 @@ ul {
   color: var(--secondary-text-color);
 }
 .field {
-  margin-bottom: 4px;
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
 .modal-input {
   display: block;
   height: 40px;
-  margin-bottom: 10px;
   padding-left: 42px;
+  margin-top: 4px;
   border: 1px solid var(--border-modal-color);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -163,22 +161,25 @@ ul {
 }
 .field-icon {
   position: absolute;
-  bottom: 21px;
+  bottom: 11px;
   left: 14px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .coment-text {
   padding: 12px 16px;
+  margin-top: 4px;
   width: 100%;
   min-height: 120px;
   resize: none;
-  margin-bottom: 20px;
   border-color: var(--border-modal-color);
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--textarea-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textarea-field {
+  margin-bottom: 20px;
 }
 .coment-text:focus,
 .coment-text:hover {
@@ -208,7 +209,7 @@ ul {
 }
 .checkbox-icon {
   position: absolute;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 2px;
   top: 0;
   left: 10px;
@@ -222,7 +223,7 @@ ul {
 }
 .modal-link {
   color: var(--accent-text-color);
-  margin-left: 4px;
+  margin-left: 2px;
 }
 .send-btn {
   display: block;
